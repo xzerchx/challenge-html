@@ -1,5 +1,74 @@
 .certificacion{
     background-color: white;
     width: 100%;
-    height: 696px;
+
+    .container{
+        display: flex;
+        flex-flow: wrap;
+    }
+    &__content{
+        display: flex;
+        flex-flow: wrap;
+        max-width: 898px;
+        margin-top: 48px;
+        @include desktop{
+            margin-top: 0px;
+        }
+        &__item{
+            margin-right: 64px;
+            margin-bottom: 48px;
+            width: 100%;
+
+            @include desktop{
+                max-width: 256px;
+            }
+            &:nth-child(3n){
+                margin-right: 0px;
+            }
+            img{
+                width: auto;
+                height: 64px;
+                margin-bottom: 24px;
+                display: block;
+            }
+            h3{
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #373F56;
+                margin-bottom: 16px;
+            }
+            p{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #848997;
+            }
+        }
+    }
+    &__title{
+        max-width: 222px;
+        @include desktop{
+            margin-right: 80px;
+        }
+        h3{
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            color: #848997;
+
+            &::after{
+                content:'';
+                width: 106px;
+                height: 1px;
+                display:block;
+                margin-top: 23px;
+                background: #101935;
+            }
+        }
+    }
 }

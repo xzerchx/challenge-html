@@ -2,8 +2,9 @@
     background-color: #101935;
     width: 100%;
     color: white;
+  
     .container{
-        @include desktop{
+         @include desktop{
             padding-top: 64px;
             padding-bottom: 64px;
         }
@@ -15,7 +16,6 @@
             text-align: center;
         }
     }
-
 
     .contacto__content{
         display: flex;
@@ -44,6 +44,10 @@
             margin-right: 24px;
             @include mobile{
                 text-align: center;
+                &:nth-child(3){
+                    margin-top: 16px;
+                    margin-bottom: 16px;
+                }
             }
             &:last-child{
                 margin-right: 0px;
@@ -62,6 +66,7 @@
                 }
             }
             &.links{
+                
                 @include desktop{
                     max-width: 214px;
                 }
@@ -74,3 +79,5 @@
 
     }
 }
+
+  
